@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#121417">
+    <meta name="description" content="Use the interactive project assistant to prepare a construction or foundation repair estimate request for Golightly Construction in Lamar County, Texas.">
+    <title>Project Quote Assistant | Golightly Construction &amp; Foundation Repair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Golightly Construction home"><span class="brand-mark">GC</span><span class="brand-copy"><strong>Golightly</strong><small>Construction &amp; Foundation Repair</small></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="mission.html">Mission</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="nav-cta" href="quote.html" aria-current="page">Get a Quote <span aria-hidden="true">↗</span></a></nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="quote-page">
+        <div class="container quote-layout">
+          <div class="quote-intro">
+            <p class="eyebrow">Project quote assistant</p>
+            <h1>Let’s figure out<br><em>the next step.</em></h1>
+            <p>Answer a few quick questions and we’ll prepare a clear project summary you can send to Colton.</p>
+            <div class="quote-disclaimer">
+              <strong>A note about pricing</strong>
+              <p>This guided assistant is not connected to a live AI model and does not invent a dollar estimate. Project costs depend on an on-site review, measurements, materials, access, and scope. Colton will confirm pricing directly.</p>
+            </div>
+            <a class="phone-link" href="tel:+19032495512">Prefer to call? <strong>903-249-5512</strong></a>
+          </div>
+
+          <div class="chat-card">
+            <div class="chat-top">
+              <div><span class="assistant-dot"></span><p>Golightly project assistant</p></div>
+              <button class="reset-chat" type="button" data-chat-reset>Start over</button>
+            </div>
+            <div class="chat-messages" data-chat-messages role="log" aria-live="polite" aria-relevant="additions"></div>
+            <div class="chat-choices" data-chat-choices></div>
+            <form class="lead-form" data-lead-form hidden>
+              <h2>Where can Colton reach you?</h2>
+              <p>We’ll prepare a project inquiry in your email app for you to review and send.</p>
+              <label for="lead-name">Your name</label>
+              <input id="lead-name" name="name" autocomplete="name" required>
+              <label for="lead-phone">Phone number</label>
+              <input id="lead-phone" name="phone" type="tel" autocomplete="tel" required>
+              <label for="lead-email">Email address (optional)</label>
+              <input id="lead-email" name="email" type="email" autocomplete="email">
+              <label for="lead-town">Town or project location in Lamar County</label>
+              <input id="lead-town" name="location" autocomplete="address-level2" required>
+              <label for="lead-details">Project details</label>
+              <textarea id="lead-details" name="details" rows="4" required></textarea>
+              <button class="button button-red" type="submit">Prepare my inquiry <span aria-hidden="true">↗</span></button>
+              <p class="form-status" data-lead-status role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="index.html" aria-label="Golightly Construction home"><span class="brand-mark">GC</span><span class="brand-copy"><strong>Golightly</strong><small>Construction &amp; Foundation Repair</small></span></a>
+        <p>Serving Lamar County, Texas</p>
+        <p>© <span data-year></span> Golightly Construction</p>
+      </div>
+    </footer>
+  </body>
+</html>
